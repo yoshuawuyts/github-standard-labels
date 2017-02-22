@@ -17,12 +17,40 @@ Create a standard set of issue labels for a GitHub project
     -v, --version   Print version
 ```
 
+## Labels
+```txt
+duplicate:             ededed
+greenkeeper:           ededed
+Priority: Critical:    ee0701
+Priority: High:        d93f0b
+Priority: Low:         0e8a16
+Priority: Medium:      fbca04
+Status: Abandoned:     000000
+Status: Available:     c2e0c6
+Status: Blocked:       ee0701
+Status: In Progress:   cccccc
+Status: On Hold:       e99695
+Status: Proposal:      d4c5f9
+Status: Review Needed: fbca04
+Type: Bug:             ee0701
+Type: Documentation:   5319e7
+Type: Enhancement:     1d76db
+Type: Maintenance:     fbca04
+Type: Question:        cc317c
+```
+
 ## API
 ### githubStandardLabels(opts, cb([err]))
 Apply labels to a project. `opts` should be an object containing:
 - __.github:__ an instance of `ghauth`
 - __.username:__ the name of the project owner
 - __.repo:__ the repository name
+
+## Acknowledgements
+- [Joe Hand](github.com/joehand/) for coming up with the labeling scheme
+
+## See Also
+- https://developer.github.com/v3/issues/labels
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
