@@ -1,0 +1,32 @@
+{
+  "name": "github-standard-labels",
+  "description": "Create a standard set of issue labels for a GitHub project",
+  "repository": "yoshuawuyts/github-standard-labels",
+  "version": "1.0.0",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "start": "node .",
+    "test": "standard && npm run deps && nyc node test.js",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov"
+  },
+  "dependencies": {
+    "ghauth": "^3.2.1",
+    "map-limit": "0.0.1",
+    "minimist": "^1.2.0",
+    "request": "^2.79.0",
+    "run-series": "^1.1.4"
+  },
+  "devDependencies": {
+    "dependency-check": "^2.8.0",
+    "nyc": "^10.1.2",
+    "standard": "^8.6.0",
+    "tape": "^4.6.3"
+  },
+  "keywords": [
+    "github",
+    "label/\u001b[D"
+  ],
+  "bin": {
+    "github-standard-labels": "./bin.js"
+  }
+}
