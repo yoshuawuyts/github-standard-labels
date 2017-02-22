@@ -47,7 +47,7 @@ Apply labels to a project. `opts` should be an object containing:
 - __.repo:__ the repository name
 
 ## Acknowledgements
-- [Joe Hand](github.com/joehand/) for coming up with the labeling scheme
+- [Joe Hand](github.com/joehand/) for showing me this cool labeling scheme
 
 ## See Also
 - https://developer.github.com/v3/issues/labels
