@@ -39,6 +39,8 @@ Type: Maintenance:     fbca04
 Type: Question:        cc317c
 ```
 
+See what they look like on the [demo issue][12].
+
 ## API
 ### githubStandardLabels(opts, cb([err]))
 Apply labels to a project. `opts` should be an object containing:
@@ -67,3 +69,4 @@ Apply labels to a project. `opts` should be an object containing:
 [9]: https://npmjs.org/package/github-standard-labels
 [10]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
 [11]: https://github.com/feross/standard
+[12]: https://github.com/yoshuawuyts/github-standard-labels/issues/2
