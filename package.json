@@ -6,15 +6,13 @@
   "scripts": {
     "deps": "dependency-check . && dependency-check . --extra --no-dev",
     "start": "node .",
-    "test": "standard && npm run deps && nyc node test.js",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov"
+    "test": "standard && npm run deps"
   },
   "dependencies": {
     "ghauth": "^3.2.1",
     "map-limit": "0.0.1",
     "minimist": "^1.2.0",
-    "request": "^2.79.0",
-    "run-series": "^1.1.4"
+    "request": "^2.79.0"
   },
   "devDependencies": {
     "dependency-check": "^2.8.0",
