@@ -18,7 +18,6 @@ var usage = `
 
   Commands:
     <default>   Create a set of labels for a project
-    list        List all labels on a project
 
   Options:
     -h, --help      Print usage
