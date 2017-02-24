@@ -21,6 +21,7 @@ Create a standard set of issue labels for a GitHub project
 ```txt
 duplicate:             ededed
 greenkeeper:           ededed
+starter                ffc0cb
 Priority: Critical:    ee0701
 Priority: High:        d93f0b
 Priority: Low:         0e8a16
