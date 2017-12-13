@@ -1,7 +1,7 @@
 var mapLimit = require('map-limit')
 var request = require('request')
 
-var colors = {
+var defaultColors = {
   'duplicate': 'ededed',
   'greenkeeper': 'ededed',
   'starter': 'ffc0cb',
@@ -27,14 +27,15 @@ module.exports = githubStandardLabels
 
 // https://developer.github.com/v3/issues/labels/
 function githubStandardLabels (opts, cb) {
-  var username = opts.username
+  var organization = opts.organization
   var github = opts.github
   var repo = opts.repo
+  var colors = typeof opts.colors !== 'undefined' ? require(opts.colors) : defaultColors;
 
   var auth = github.token + ':x-oauth-basic@'
   var uri = 'https://' + auth +
     'api.github.com/repos/' +
-    username + '/' + repo + '/labels'
+    organization + '/' + repo + '/labels'
 
   var reqOpts = {
     uri: uri,
