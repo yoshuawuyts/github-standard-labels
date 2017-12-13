@@ -7,7 +7,7 @@ Create a standard set of issue labels for a GitHub project
 ## Usage
 ```txt
   Usage:
-    $ github-standard-labels <username> <project>
+    $ github-standard-labels <username> <organization> <project> <labels-file>
 
   Commands:
     <default>   Create a set of labels for a project
@@ -17,7 +17,7 @@ Create a standard set of issue labels for a GitHub project
     -v, --version   Print version
 ```
 
-## Labels
+## Default Labels
 ```txt
 duplicate             #ededed
 greenkeeper           #ededed
@@ -46,8 +46,10 @@ See what they look like on the [demo issue][12].
 ### githubStandardLabels(opts, cb([err]))
 Apply labels to a project. `opts` should be an object containing:
 - __.github:__ an instance of `ghauth`
-- __.username:__ the name of the project owner
+- __.username:__ the name of the use to authenticate as 
+- __.organization:__ the name of the project owner
 - __.repo:__ the repository name
+- __.colors:__ an object containing label:color tuples
 
 ## Acknowledgements
 - [Joe Hand](https://github.com/joehand/) for showing me this cool labeling scheme
