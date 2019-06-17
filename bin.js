@@ -33,7 +33,7 @@ var usage = `
     var username = argv._[0]
     var organization = argv._[1]
     var repo = argv._[2]
-    var colors = argv._[3];
+    var colors = argv._[3]
     if (!username || !organization || !repo) {
       console.error('username or organization or repo missing')
       process.exit(1)
